@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+
+    <script src="main.js"></script>
+    <title>Ease tech hub</title>
+</head>
+<body>
+    <!--main page start
+    header wrapped with navigation and hero cover-->
+    <header>
+       <div class="container  mt-auto">
+            <div class="rol">
+                <div class="navigation d-flex justify-content-between">
+                    <div class="nav navbar-brand logo">
+                        <h3>ease tech</h3>
+                    </div>
+                    <div class="navlinks justify-content-between">
+                        <a href="index.html" class="text-decoration-none m-3 active">Home</a>
+                        <a href="#about" class="text-decoration-none m-3">about</a>
+                        <a href="features" class="text-decoration-none m-3">Features</a>
+                        <div class="dropdown m-3">
+                        <button class="dropbtn dropdown-menu-dark dropdown-toggle" id="defaultShown" onclick="showDropdown()">services</button>
+                        <button class="dropbtn dropdown-menu-dark dropdown-toggle" id="defaultHidden" onclick="hideDropdown()">services</button>
+
+                        <div class="dropdown-container">
+                            <a href="#" class="text-decoration-none m-3 d-block active">Developement</a>
+                            <a href="#" class="text-decoration-none m-3 d-block">Graphics</a>
+                            <a href="#" class="text-decoration-none m-3 d-block">ICT</a>
+                            <a href="#" class="text-decoration-none m-3 d-block">Computer Basics</a>
+                            <a href="#" class="text-decoration-none m-3 d-block">IT Support</a>
+                            <a href="#" class="text-decoration-none m-3 d-block">Production</a>
+                            <a href="#" class="text-decoration-none m-3 d-block">Elctronics repair</a>
+
+                        </div>
+                        </div>
+                        <a href="#" class="text-decoration-none m-3">Pricing</a>
+
+                        <a href="#" class="text-decoration-none m-3">Download</a>
+                        <a href="#contact" class="text-decoration-none m-3">Contact</a>
+                        <a href="#" class="text-decoration-none m-3">Account</a>
+                    </div>
+                    <div class="menu-drop" >
+                        <button class="bi-list" id="defShown" onclick="showDrop()"></button>
+                        <button class="bi-x" id="defHidden" onclick="hidedown()"></button>
+
+                        <div class="content">
+                            <a href="index.html" class="text-decoration-none m-3 d-block active">home</a>
+                            <a href="#about" class="text-decoration-none m-3 d-block">about</a>
+                            <a href="#" class="text-decoration-none m-3 d-block">features</a>
+                            <a href="#services" class="text-decoration-none m-3 d-block">services</a>
+                            <a href="#pricing" class="text-decoration-none m-3 d-block">Pricing</a>
+                            <a href="#" class="text-decoration-none m-3 d-block">Download</a>
+                            <a href="#contact" class="text-decoration-none m-3 d-block">Contact</a>
+
+                            <a href="#" class="text-decoration-none m-3 d-block">Account</a>
+                        </div>
+                </div>
+            </div>
+       </div>
+    </header>
+    <main>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="contactme" id="contact">
+                <div class="getintouch">
+                    <h3>get in touch</h3>
+                    <br>
+                    <span class="bi-geo-alt span"></span>&nbsp;<span class="">Chamba valley lusaka zambia</span><br>
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P.O Box 367 Mutumbi/Opposite<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sybor Block Factory</span><br><br>
+                    <span class="bi-globe span"></span>&nbsp;<span class=""></span><a href="" class="text-decoration-none text-white">Info@website.com</a></span><br><br>
+                    <span class="bi-google span"></span>&nbsp;<span class=""></span><a href="" class="text-decoration-none text-white">Sydneyscreative@gmail.com</a></span><br><br>
+                    <span class="bi-telephone span"></span></span>&nbsp;&nbsp<span class="">(+260)-770-576-901</span><br><br>
+                    <span><span class="bi-whatsapp span"></span><span>&nbsp;(+260)-770-576-901</span>
+                  
+                </div>
+                <div class="writeme">
+                    <div class="title" style="line-height:px;">
+                        <h3 class="d-block">Write me</h3>
+                    </div>
+                    <br>
+                    <form action="" onsubmit="Checkerror()" method="post" aria-checked="false" spellcheck="true">
+                    <p id="error"></p>
+                    <label for="names">Full Names</label><br>
+                    <input type="text" name="fullnames" id="names"><br>
+                    <label for="mail">Email Adress</label><br>
+                    <input type="email" name="email" id="email"><br>
+                    <label for="tel">Mobile Number</label><br>
+                    <input type="text" name="telephone" id="tel"><br><br>
+                    <textarea name="messge" id="message"></textarea><br>
+                    <button type="submit" role="button">Send Message</button>
+                    </form>
+                </div>
+            
+            </div>
+        </div>
+        <div class="py-3"></div>
+    </footer>
+
+    <div class="quicklinks">
+        <div class="py-5"></div>
+        <div class="container">
+            <span><a href="">Terms of services</a></span>
+            <span><a href="">help</a></span>
+            <span><a href="">blog</a></span>
+      </div>
+    </div>
+    <div class="w-100 text-center py-5 bg-black text-white">
+        <hr>
+        <p>Copyright&copy;2023 Website.com, All Rights Reserved</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

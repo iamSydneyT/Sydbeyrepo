@@ -1,0 +1,299 @@
+@font-face {
+    font-family:   'Poppins', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+}
+/*defaulthidden button*/
+#defaultHidden{
+    display: none;
+}
+/*defaulthidden button*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}*
+
+body{
+    font-family: 'poppins',sans-serif;
+    padding: 0;
+    scroll-behavior: smooth;
+    color: black;
+    cursor: pointer;
+}
+
+header{
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    color: white;
+}
+.navigation{
+    background: #fff;
+    color: #000;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 0px 1px 3px 0px #0808084a;
+}
+.navigation .logo{
+    padding: 16px;
+    position: relative;
+    overflow-x: hidden;
+    text-transform: capitalize;
+ 
+}
+.navlinks{
+    padding: 10px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    display: flex;
+}
+.navigation a{
+    font-weight: 500;
+    text-transform: capitalize;
+    row-gap: none;
+    flex-wrap: nowrap;
+    font-size: 14px;
+    color: rgba(41, 41, 41, 0.629);
+}
+.navigation a:hover{
+    color: #dcdcdc;
+    transition: all 100ms linear;
+    opacity: .7;
+}
+
+.dropdwon{
+    position: relative;
+    overflow: auto;
+    z-index: 1;
+}
+.dropdown-container{
+    padding: 20px 0;
+    background: rgb(255, 255, 255);
+    margin-top: 28px;
+line-height: 25px;
+display: none;
+overflow: none;
+resize: none;
+box-shadow: 0px 1px 10px 0px #08080820;
+width: 180px;
+
+}
+.dropbtn:hover{
+    color: #dcdcdc;
+    transition: all 100ms linear;
+    opacity: .7;
+}
+.dropdown .dropbtn{
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    text-transform: capitalize;
+    row-gap: none;
+    font-size: 14px;
+    flex-wrap: nowrap;
+    display: block;
+    color: rgba(41, 41, 41, 0.629);
+
+}
+.dropdown-container a:hover{
+    transition: all 10ms linear;
+    opacity: .5;
+    color: #0347a7;
+    font-weight: inherit;
+    overflow: hidden;
+    text-decoration: underline;
+}
+
+/*dropdown container animations*/
+@keyframes slideY{
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes InverseslideY{
+    0%{
+        transform: translateY(-1000px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-510px);
+        opacity: 0;
+    }
+}
+.menu-drop{
+    padding: 10px;
+    display: none;
+}
+.menu-drop .content{
+    background: #ffffff;
+    padding: 10px;
+    width: 160px;
+    position: fixed;
+    left: 0;
+    margin-top: 73px;
+    box-shadow: 0px 10px 10px 0px #0000001b;
+    display: none;
+    transform: translateY(-10px);
+    transition: all ease-in-out 60s;
+}
+.menu-drop .content a{
+    padding: 5px 1px;
+    color: rgb(75, 188, 229);
+    font-weight: 300;
+}
+.menu-drop button{
+    float: right;
+    font-size: 200%;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: 900;
+    color: rgb(75,188,229);
+}
+#defHidden{
+    display: none;
+}
+.menu-drop button:hover{
+    transform: rotate(9deg);
+    transition: all 60ms linear;
+}
+
+/*slide drop animation for media screen*/
+
+/*footer stylings*/
+footer{
+    min-height: 100vh;
+    background-color: #000;
+    color: white;
+    left: 0;
+    right: 0;
+    padding: 100px 20px;
+}
+
+footer .container-fluid .contactme{
+    gap: 100px;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    padding-top: 150px;
+}
+.writeme form{
+    font-size: 100%;
+    font-family: inherit;
+    color: whitesmoke;
+}
+form input{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: 0;
+    background: none;
+    border-bottom: 2px solid rgba(245, 245, 245, 0.769);
+    color: rgba(245, 245, 245, 0.842);
+}
+form label{
+    padding: 5px;
+    font-size: 14px;
+}
+form textarea{
+    width: 100%;
+    padding: 20px;
+    text-align: start;
+    overflow: auto;
+    height: 10em;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+form button{
+    padding: 8px;
+    outline: none;
+    background-color: rgb(20, 220, 183);
+    border: none;
+    border-radius: 5px;
+}
+form button:hover{
+    transition: all ease 400ms;
+    color: rgb(255, 255, 255);
+
+    opacity: .8;
+}
+.contactme h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    word-spacing: 0;
+    color: rgb(20, 220, 183);
+}
+.getintouch .info{
+    color: rgb(255, 245, 245);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.socials{
+    padding-top: 30px;
+}
+ .span{
+    border:2px solid rgb(217, 225, 224);
+    padding: 3px;
+    font-size: 15px;
+    border-radius: 50%;
+    font-weight: bolder;
+}
+.quicklinks{
+    padding: 20px;
+    background-color: #000;
+    color: white;
+}
+.quicklinks .container{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.quicklinks .container a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 90%;
+    color: white;
+    padding: 20px 20px;
+    font-weight: lighter;
+    color: whitesmoke;
+}
+.quicklinks .container a:hover{
+    color: rgb(20, 220, 183);
+    transition: all 300ms linear;
+}
+
+@media(max-width:960px){
+    .navigation .navlinks{
+        display: none;
+    }
+    .menu-drop{
+        display: block;
+    }
+
+}
+@media(max-width:960px){
+    .navigation .navlinks{
+        display: none;
+    }
+
+}
